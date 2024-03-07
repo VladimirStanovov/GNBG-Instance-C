@@ -292,7 +292,7 @@ int main()
         double stdError = 0;
         for(int run=0;run!=NRuns;run++)
         {
-            cout<<"Func: "<<func_num<<"\tRun: "<<run<<endl;
+            cout<<"Func: "<<func_num<<"\tRun: "<<run<<"\t";
             GNBG gnbg(func_num);
             Optimizer Opt(/*population size*/ 100, gnbg);
             Opt.Run(gnbg);
@@ -311,6 +311,7 @@ int main()
             meanError += Errors[run];
             meanAcceptance += AcceptancePoints[run]*(AcceptancePoints[run] != -1);
             NNonEmpty += (AcceptancePoints[run] != -1);
+            cout<<"Error: "<<Errors[run]<<"\tAcceptancePoint: "<<AcceptancePoints[run]<<endl;
         }
         meanError /= double(NRuns);
         if(NNonEmpty > 0)
@@ -331,7 +332,7 @@ int main()
         else
             stdAcceptance = 0;
         cout<<"Average FE to reach acceptance result: "<<meanAcceptance<<"\t("<<stdAcceptance<<")\n";
-        cout<<"Acceptance Ratio: "<<NNonEmpty/NRuns*100<<"\n";
+        cout<<"Acceptance Ratio: "<<double(NNonEmpty)/double(NRuns)*100<<"\n";
         cout<<"Final result: "<<meanError<<"\t("<<stdError<<")\n";
     }
     delete Errors;
