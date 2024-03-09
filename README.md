@@ -13,7 +13,9 @@ D. Yazdani, M. N. Omidvar, D. Yazdani, K. Deb, and A. H. Gandomi, "GNBG: A Gener
   
 A. H. Gandomi, D. Yazdani, M. N. Omidvar, and K. Deb, "GNBG-Generated Test Suite for Box-Constrained Numerical Global Optimization," arXiv preprint arXiv:2312.07034, 2023.
   
-MATLAB and Python versions: https://github.com/Danial-Yazdani/GNBG-Instances
+MATLAB version: https://github.com/Danial-Yazdani/GNBG_Instances.MATLAB
+
+Python version: https://github.com/Danial-Yazdani/GNBG_Instances.Python
 
 # Compilation and usage
 First convert f#.mat files into f#.txt with a specific format using python script:
