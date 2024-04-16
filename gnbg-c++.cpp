@@ -9,7 +9,8 @@
 ///   and Configurable Benchmark Generator for Continuous Numerical Optimization," arXiv prepring	arXiv:2312.07083, 2023.
 /// A. H. Gandomi, D. Yazdani, M. N. Omidvar, and K. Deb, "GNBG-Generated Test Suite for Box-Constrained Numerical Global
 ///   Optimization," arXiv preprint arXiv:2312.07034, 2023.
-/// MATLAB and Python versions: https://github.com/Danial-Yazdani/GNBG-Instances
+/// MATLAB version: https://github.com/Danial-Yazdani/GNBG_Generator.MATLAB
+/// Python version: https://github.com/Danial-Yazdani/GNBG_Generator.Python
 #include <iostream>
 #include <math.h>
 #include <time.h>
